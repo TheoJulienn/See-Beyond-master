@@ -1,0 +1,111 @@
+
+Instruction pour github
+
+################	Installation	################
+
+
+1) Installer git ( https://gitforwindows.org/ )
+
+2) Lancer git bash ( c'est l'endroit ou on fait les commandes pour github)
+
+3) Mettre son nom et son adresse mail (rattaché au compte github) :
+
+			-	git config --global user.name "Votre nom ou pseudo"
+			
+			-	git config --global user.email "Votre@email.com"
+
+			
+
+################	Récupérer le dépot	################
+
+0) Si ce n'est pas déjà, créer un document vide où on peut placer les données. Pour créer dossier, on se place à l'endroit ou l'on souhaite le créer 
+et on utilise la commande mkdir, ex : 
+			
+			- mkdir nom_nouveau_dossier
+			
+1) Se placer dans le dossier avec la commande cd :
+
+			- cd nom_nouveau_dossier
+			
+2) Récuperer les données sur la branche master en ligne, cloner :
+
+			- git clone lienversgit ( par ex : https://github.com/TheoJulienn/See-Beyond-master.git)
+			
+Il faudra ensuite se placer dans le dossier créer ( faites la commande ls pour lister ce qu'il y a dans le dossier courant pour verifier si ca a bien été téléchargé)
+Lorsque vous serez dans le dossier il devrait y avoir marqué (master) sur le terminal.
+
+
+
+################	Créer une nouvelle branche	################
+
+C'est mieux de créer une nouvelle branche avec votre nom pour ne pas toucher à la master, on la modifiera (en fusionnant nos branche dans celle-ci) une fois qu'on aura valider tous les changements.
+Pour ce faire (en étant dans le master) :
+
+1) creation de la branche :
+			
+			- git branch nouvelle-branche 
+			
+2) se placer dans cette nouvelle branche créée : 
+			
+			- git checkout nouvelle-branche
+			
+			
+A la place de (master) il devrait maintenant y avoir marqué (nouvelle-branche)
+
+
+
+#################################################################
+	
+Maintenant vous pouvez coder tranquille... 
+
+Une fois que vous avez fais les modifs que vous voulez il faut faire un commit
+
+!!!!!! Pour ajouter un fichier il faut faire : 
+
+			- git add nom_fichier
+			
+!!!!!! Pour voir les mises a jour en temps réel (avant de commit par exemple) : 
+
+			- git status
+
+################	Commit 	################
+
+Le commit va enregistrer vos modifications dans votre branche (avec un identifiant), l'option -m permet d'ajouter un message pour spécifier les modifications (histoire de se retrouver dans les modifs et de savoir 
+ce qui a été mis a jour)
+
+			- git commit -m "AJOUT DE FONCTIONNALITES" 
+			
+			
+		
+{						Pour modifier le message du dernier commit :
+
+									- git commit --amend -m "Votre nouveau message"
+
+						Pour avoir un historique des commits : 
+									
+									- git log
+
+						Pour annuler commit: 
+								
+									- git revert SHADuCommit 
+									
+						------> Le SHA du commit se trouve sur internet dans l'historique des commits
+}
+
+
+
+Une fois le commit fait, il faut push les modifications sur la branche en ligne 
+
+################	Push 	################
+
+
+			- git push origin nouvelle-branche (il faut mettre origin avant le nom de sa branche)
+			
+			
+			
+Une fois le push executé vous pouvez aller voir sur internet les modifications apporté, il faut aller sur le git.
+
+
+
+
+
