@@ -1,3 +1,5 @@
+﻿NE PAS OUBLIER DE TRAVAILLER SUR SA BRANCHE AVANT DE COMMIT 
+
 
 Instruction pour github
 
