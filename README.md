@@ -2,7 +2,7 @@
 
 
 **Auteurs: Omaima Ait-Abbou, Camélia Sadki & Théo Julien** 
-**ENSG 2018**
+
 
 ### Introduction:
 Service web de calcul d'intervisiblité et de viewshed
@@ -18,3 +18,6 @@ Librairies :
 ### Contact
 
 [Théo JULIEN](mailto:theo.julien@ensg.eu)
+
+
+*ENSG 2018*
