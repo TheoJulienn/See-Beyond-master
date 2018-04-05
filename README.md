@@ -1,23 +1,28 @@
-## See Beyond
+# See Beyond
 
 
-**Auteurs: Omaima Ait-Abbou, Camélia Sadki & Théo Julien** 
+**Auteurs:** 
+ + Omaima Ait-Abbou 
+ + Camélia Sadki 
+ + Théo Julien
 
 
-### Introduction:
+## Introduction:
+
 Service web de calcul d'intervisiblité et de viewshed
 
 
 
-### Dépendences
+## Dépendences
+
 
 Librairies : 
   + [OWSLib](https://geopython.github.io/OWSLib/)
 
 
-### Contact
+## Contact
+
 
 [Théo JULIEN](mailto:theo.julien@ensg.eu)
-
 
 *ENSG 2018*
