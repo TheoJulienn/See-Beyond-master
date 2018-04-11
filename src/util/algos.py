@@ -5,6 +5,18 @@ Created on Wed Feb 28 16:50:05 2018
 @author: Théo
 """
 
+import numpy as np
+import math as m
+
+def refraction(h):
+    R = 1.02/(m.tan(h+(10.3/(h + 5.11))))
+    return R
+
+def distance_max(h, r = 6371*(10**3)):
+    R = refraction(h)
+    D = (m.sqrt(2*h*r + h*h))*(1-R/100)  
+    return D
+
 def bresenham(start, end):
     """Bresenham's Line Algorithm
     Produces a list of tuples from start and end
@@ -63,3 +75,22 @@ def bresenham(start, end):
     return points
 
 
+def limite_visibilite(arr, dep, res,d):
+    d_px = m.sqrt((arr[0] - dep[0])**2 + (arr[1] - dep[1])**2)
+    d_metre = d_px*res
+    if d_metre < d:
+        return True
+    else:
+        return False
+    
+def Elevation(dep,arr,MNT):
+    visi = True
+    liste = bresenham(dep, arr)
+    elev = []
+    for coord in liste:
+        elev.append(MNT[coord])  
+    maxi = np.amax(elev)      
+    if (MNT[dep])!= maxi or (MNT[dep])<maxi :
+        visi = False 
+    return elev, maxi, visi
+    
