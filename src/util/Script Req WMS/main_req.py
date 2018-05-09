@@ -26,11 +26,11 @@ if __name__ == "__main__":
     #coté de la tuile sur le terrain (m)
     footprint = 100
     #creation de liste de point
-    for i in range(10):
-        liste_pt.append( (pt[0] + i *footprint , pt[1] + i * footprint) )
-
-    getInfo()
-    for pt in liste_pt:
-        do_Request(pt,resolution,footprint)
+#    for i in range(10):
+#        liste_pt.append( (pt[0] + i *footprint , pt[1] + i * footprint) )
+#
+#    getInfo()
+#    for pt in liste_pt:
+    do_Request(pt,resolution,footprint)
 
 
